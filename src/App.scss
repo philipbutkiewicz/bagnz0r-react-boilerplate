@@ -1,0 +1,55 @@
+@import './app/resources/fonts/fonts.scss';
+@import './app/resources/colors.scss';
+@import './app/resources/typography.scss';
+
+.app {
+    padding: 16px;
+    box-sizing: border-box;
+
+    header {
+        margin-bottom: 16px;
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                display: inline-block;
+                margin: 0 2px 0 0;
+
+                a {
+                    display: block;
+                
+                    color: $base-5;
+                    background: $base-0;
+                
+                    border: 1px solid $base-3;
+                    border-radius: 4px;
+                
+                    box-sizing: border-box;
+                    padding: 4px 8px;
+                
+                    text-decoration: none;
+                
+                    transition: all .125s ease-in-out;
+
+                    &:hover {
+                        background: $base-2;
+                    }
+
+                    &:active {
+                        border-color: $accent-6;
+                        background: $accent-6;
+                        color: $base-0;
+                    } 
+                }
+            }
+        }
+    }
+
+    footer {
+        font-size: 12px;
+        margin: 24px 0;
+    }
+}

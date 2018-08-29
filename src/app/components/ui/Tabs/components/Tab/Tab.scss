@@ -1,0 +1,41 @@
+@import '../../../resources/colors.scss';
+
+.tab {
+    display: inline-block;
+
+    margin-right: 2px;
+    padding: 4px 16px;
+    box-sizing: border-box;
+
+    text-align: center;
+    font-size: 14px;
+    font-family: 'PT Sans Narrow';
+    font-weight: bold;
+
+    color: $base-5;
+
+    background: $base-2;
+
+    border: 1px solid $base-3;
+    border-bottom: none;
+
+    transition: all .125s ease-in-out;
+
+    &:hover {
+        border-color: $accent-6;
+        color: $base-0;
+        background: $accent-6;
+    }
+
+    &:active {
+        border-color: $accent-8;
+        color: $base-0;
+        background: $accent-8;
+    }
+}
+
+.tabActive {
+    border-color: $accent-6;
+    background: $accent-6;
+    color: $base-0;
+}

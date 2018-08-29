@@ -1,0 +1,29 @@
+@import '../../resources/colors.scss';
+
+.selectBox {
+    display: inline-block;
+    margin: 2px 2px 2px 0;
+
+    select {
+        padding: 7px;
+        box-sizing: border-box;
+    
+        border-radius: 4px;
+    
+        font-size: 14px;
+        font-family: 'PT Sans Narrow';
+    
+        color: $base-6;
+        background: $base-0;
+    
+        border: 1px solid $base-3;
+        
+        outline: none;
+    
+        transition: all .125s ease-in-out;
+
+        &:focus, &:active {
+            border: 1px solid $accent-6;
+        }
+    }
+}

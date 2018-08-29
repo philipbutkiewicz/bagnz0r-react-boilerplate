@@ -1,0 +1,44 @@
+@import '../../resources/colors.scss';
+
+.checkbox {
+    margin: 8px 16px 8px 0;
+
+    font-size: 14px;
+    font-family: 'PT Sans Narrow';
+    font-weight: bold;
+
+    border-radius: 4px;
+
+    color: $base-5;
+
+    &::after {
+        clear: both;
+    }
+}
+
+.checkBoxInline {
+    display: inline-block;
+}
+
+.checkBoxInner {
+    float: left;
+    margin-right: 4px;
+
+    width: 16px;
+    height: 16px;
+
+    background: $base-2;
+
+    border: 1px solid $base-3;
+
+    transition: all .125s ease-in-out;
+
+    &:active {
+        transform: scale(0.92);
+    }
+}
+
+.checkBoxChecked .checkBoxInner {
+    border: 1px solid $accent-6;
+    background: $accent-6;
+}
